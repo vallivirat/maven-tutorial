@@ -1,7 +1,7 @@
 node {
     // Define the workspace and tools
-    def mavenHome = tool name: 'Maven 3.x', type: 'maven'
-    def javaHome = tool name: 'JDK 11', type: 'jdk'
+    def mavenHome = tool name: 'MAVEN_HOME', type: 'maven'
+    def javaHome = tool name: 'JAVA_HOME', type: 'jdk'
 
     // Set environment variables for Maven and Java
     env.PATH = "${mavenHome}/bin:${javaHome}/bin:${env.PATH}"
